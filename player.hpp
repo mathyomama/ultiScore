@@ -5,11 +5,20 @@ namespace ultimate {
 
 class Player {
 	public:
-		Player();
+		// constructor
+		Player(); // default constructor
+		explicit Player(std::string name); // takes name of player
+		Player(std::string name, unsigned int height); // takes name and height
+
+		// member functions
+		void setHeight(unsigned int height);
+		void setName(std::string);
+
 	private:
+		// member variables
 		std::string m_name;
-		float m_height;
-		Stats m_stats;
+		unsigned int m_height; // we can arbitrarily say it's in inches
+		Stats m_stats; // This will hold the stats for the player
 };
 
 }
