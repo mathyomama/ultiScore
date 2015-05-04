@@ -1,7 +1,8 @@
 #ifndef TEAM_HPP__
 #define TEAM_HPP__
 
-#include <unordered_map>
+#include <unordered_set>
+#include "player.hpp"
 
 namespace ultimate {
 
@@ -19,9 +20,10 @@ class Team {
 	private:
 		// member variables
 		std::string m_teamname;
-		std::unordered_map<Player> m_players;
+		std::unordered_set<Player> m_players;
 };
 
 }
+
 
 #endif
