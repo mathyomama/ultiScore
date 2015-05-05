@@ -31,3 +31,6 @@
 # certain directories
 build/
 bin/
+
+# vim swap files
+.*.swp

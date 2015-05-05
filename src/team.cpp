@@ -2,6 +2,6 @@
 
 
 Team::Team() :
-	m_teamname{"Florida"}, m_players{std::unordered_set{}}
+	m_teamname{}, m_players{}
 {
 }
