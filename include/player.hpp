@@ -7,6 +7,9 @@
 
 namespace ultimate {
 
+	// forward declaring needed classes
+	class Stats;
+
 	class Player {
 		public:
 			// constructor
@@ -16,14 +19,17 @@ namespace ultimate {
 			// member functions
 			void set_height(unsigned int height);
 			void set_name(std::string name);
-			size_t get_id();
+			unsigned long get_id();
 			std::string get_name();
 			bool operator==(const Player &rhs);
 
 		private:
+			// static member variable
+			static unsigned long s_id;
+
 			// member variables
 			std::string m_name;
-			size_t m_id;
+			unsigned long m_id;
 			unsigned int m_height; // in inches
 			Stats m_stats; // This will hold the stats for the player
 	};
