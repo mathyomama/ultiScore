@@ -19,8 +19,8 @@ namespace ultimate {
 			// member functions
 			void set_height(unsigned int height);
 			void set_name(std::string name);
-			unsigned long get_id();
-			std::string get_name();
+			unsigned long get_id() const;
+			std::string get_name() const;
 			bool operator==(const Player &rhs);
 
 		private:
@@ -43,7 +43,7 @@ namespace std {
 	template <>
 	class hash<ultimate::Player> {
 		public:
-			size_t operator()(const ultimate::Player &player);
+			size_t operator()(const ultimate::Player &player) const;
 	};
 
 }

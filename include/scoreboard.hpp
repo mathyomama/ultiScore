@@ -38,9 +38,9 @@ namespace ultimate {
 			Team m_you; // The good guys team
 			Team m_opponent; // The bad guys team
 			unsigned int m_your_score;
-			unsigned int m_oppnonent_score;
+			unsigned int m_opponent_score;
 			unsigned int m_score_limit; // the point value being played to
-			unsigned int current_point; // the current point being played
+			unsigned int m_current_point; // the current point being played
 			std::vector<Side> m_points; // vector of who scored each point
 	};
 
